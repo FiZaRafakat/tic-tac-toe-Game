@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+      margin: 20px;
+      margin-bottom: 30px;
+      background-color: #BA9593;
+      text-align: center;
+}
+.container {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 60vh;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.game{
+    height: 50vh;
+    width : 50vh;
+    display: flex ;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap : 1.5vh;
+}
+.box{
+    height : 15vh;
+    width : 15vh;
+    border-radius: 1.5rem;
+    border : none ;
+    box-shadow: 0 0 2px rgba(47, 45, 45, 0.8);
+    font-size: 10vh;
+    color : #623B5A ;
+    background-color: #C8FFBE;
+}
+.box:hover{
+    box-shadow: 0 0 5px rgba(119, 255, 0, 0.8);
+}
+#reset-btn{
+    position: relative;
+     color : black ;
+     background-color: #89608E;
+     height : 8vh ;
+     width : 30vh ;
+     font-size: 3vh ;
+     border-radius: 1.2rem;
+     border: none;
+     margin : 20px;
+     margin-top : 50px;
+     font-weight: 500;
+}
+#new-btn{
+     color : black ;
+     background-color: #89608E;
+     height : 8vh ;
+     width : 30vh ;
+     font-size: 3vh ;
+     border-radius: 1.2rem;
+     border: none;
+     margin : 20px;
+     font-weight: 500;
+}
+#reset-btn:hover{
+    box-shadow: 0 0 10px rgba(255, 186, 252, 0.8)
+}
+#new-btn:hover{
+    box-shadow: 0 0 10px rgba(255, 186, 252, 0.8)
+}
+#h1{
+    font-size: 10vmin;
+    color :rgb(11, 11, 174)
+}
+#msg{
+    color : #EDFFAB ;
+    font-size: 10vh;
+}
+.msg-box{
+    height : 100vmin ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.hide{
+    display: none;
+}
+/* for O color */
+.addColor1 {  
+    color : white ;
+    background-color: #EDFFAB ;
+}
+
+.options{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    height : 30vh ;
+    width : 50vh ;
+    display : flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+#game-mode {
+    font-style: italic;
+    font-size: 2vh;
+    color: rgb(11, 11, 174);
+    font-weight:600;
+    width : 30vh ;
+    text-align: center;
+    margin-left: 60px;
+    margin-right: 10px;
+    border-radius: 0.8rem;
+     border: none;
+     height : 5vh ;
+     cursor : pointer 
+}
+#game-mode:focus {
+    outline: none; 
+    border: none; 
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+#game-mode:hover {
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3); 
+}
+
+#option{
+    width : 100% ;
+    font-style: italic;
+    font-size: 5vh;
+    color : #623B5A ;
+    font-weight:700;
+} 
+
+@media (max-width: 768px) {
+    
+    .game {
+        width: 50vw; 
+        height: 50vw; 
+        gap: 1vw; 
+    }
+
+    .box {
+        width: 15vw; 
+        height: 15vw;
+        font-size: 9vw; 
+    }
+
+    #reset-btn, #new-btn {
+        width: 30vw; 
+        height: 7vh;
+        font-size: 3vw; 
+    }
+
+    #h1 {
+        font-size: 8vw; 
+    }
+
+    #msg {
+        font-size: 7vw; 
+    }
+    
+    .options {
+    margin : 30px ;
+    }
+
+    #game-mode {
+        font-size: 2.5vw; 
+        width: 30vw; 
+        height: 5vh;  
+        /* margin-left: 1vh; */
+    }
+
+    #option {
+        font-size: 5vw; 
+    }
+}
+@media (max-width : 560px){
+    .game {
+        width: 70vw; 
+        height: 70vw; 
+        gap: 1.5vw; 
+    }
+
+    .box {
+        width: 20vw; 
+        height: 20vw;
+        font-size: 12vw; 
+    }
+
+    #reset-btn, #new-btn {
+        width: 40vw; 
+        height: 8vh;
+        font-size: 5vw; 
+    }
+
+    #h1 {
+        font-size: 10vw; 
+    }
+
+    #msg {
+        font-size: 10vw; 
+    }
+    
+    .options {
+    margin : 30px ;
+    width : 55vh ;
+    }
+
+    #game-mode {
+        font-size: 3vw; 
+        width: 40vw; 
+        height: 5vh;  
+        margin-left: 12vh;
+    }
+
+    #option {
+        font-size: 8vw; 
+        
+    }
+
+    .msg-box{
+        height: 80vmin;
+    }
+}
+
+ @media (max-width: 400px) and (min-width : 320px) {
+  
+
+    .game {
+        width: 90vw; 
+        height: 90vw;
+        gap: 1.5vw;
+    }
+
+    .box {
+        width: 28vw; 
+        height: 28vw;
+        font-size: 15vw;
+
+    }
+
+    #reset-btn, #new-btn {
+        width: 50vw; 
+        height: 6vh; 
+        font-size: 4.5vw; 
+    }
+
+    #h1 {
+        font-size: 10vw;
+    }
+
+    #msg {
+        font-size: 10vw;
+    }
+
+    #game-mode {
+        font-size: 3.5vw; 
+        width: 50vw; 
+        height: 4.5vh; 
+        margin-left: 11vh ;
+    }
+    #option {
+        font-size: 6vw; 
+    }
+
+    .msg-box{
+        height : 100vh
+    }
+}  
